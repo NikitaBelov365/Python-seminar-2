@@ -6,15 +6,23 @@ def ListCreation(num):
     list1 = []
     for i in range(days):
         list1.append(random.randint(-50, 50))
-        i += 1
+
     return list1
 
 def PrintPositive(list):
     sumPosititve = 0
+    maxSum = 0
     for i in range(len(list)):
+        if sumPosititve > maxSum:
+            maxSum = sumPosititve
         if list[i] > 0:
             sumPosititve +=1
-        i += 1
-    print(sumPosititve)
+        else:
+            sumPosititve = 0
 
-PrintPositive(ListCreation(days))
+    print(maxSum)
+
+
+list1 = ListCreation(days)
+print(list1)
+PrintPositive(list1)
