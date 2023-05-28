@@ -11,6 +11,6 @@ while fib_curr < A:
     n += 1
 
 if fib_curr == A:
-    print(A, " is ", n, " in fib")
+    print(A, " is", n, " in fib")
 else:
     print('no')
