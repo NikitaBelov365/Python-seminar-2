@@ -10,11 +10,11 @@ def ListCreation(num):
     return list1
 
 def PrintPositive(list):
-    newList = []
+    sumPosititve = 0
     for i in range(len(list)):
         if list[i] > 0:
-            newList.append(list[i])
+            sumPosititve +=1
         i += 1
-    print(newList)
+    print(sumPosititve)
 
 PrintPositive(ListCreation(days))
